@@ -1,9 +1,16 @@
-import React from 'react'
+import Link from "next/link";
 
-const Logo = ({title, className}) => {
+interface Props{
+  title?:string;
+  className?:string;
+}
+
+const Logo = ({title, className}:Props) => {
   return (
+    <Link href={"/"}>
     <h1 className={`text-3xl font font-extrabold uppercase ${className}`}>
-        {title}</h1>
+    {title || 'Posblog'}</h1>
+    </Link>
   )
 }
 

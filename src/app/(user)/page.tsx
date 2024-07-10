@@ -1,7 +1,10 @@
+import Hero from "@/components/Hero";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main> <p>pos blog app</p> </main>
+    <main> 
+      <Hero />
+    </main>
   );
 }
